@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="user-scalable=yes, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <!--<link rel="stylesheet" type="text/css" href="css/index.css" />-->
+    <title>Hello World!</title>
+    <meta name="viewport" content="width=320">
+    <!-- stylesheets for bootstrap -->
+
+    <script>
+        // Must be first. IE10 mobile viewport fix
+        if ("-ms-user-select" in document.documentElement.style && navigator.userAgent.match(/IEMobile\/10\.0/)) {
+            var msViewportStyle = document.createElement("style");
+            var mq = "@-ms-viewport{width:auto!important}";
+            msViewportStyle.appendChild(document.createTextNode(mq));
+            document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+        }
+    </script>
+
+    <link href="Content/ie10mobile.css" rel="stylesheet" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="Content/toastr.css" rel="stylesheet" />
+    <link href="Content/customtheme.css" rel="stylesheet">
+
+	<link href="content/breeze.directives.css" rel="stylesheet" />
+    <link href="Content/styles.css" rel="stylesheet" />
+        <link href="Content/shop.css" rel="stylesheet" />
+
+
+
+</head>
+<body>
+    <!--<div class="app">
+            <h1>Apache Cordova</h1>
+            <div id="deviceready" class="blink">
+                <p class="event listening">Connecting to Device</p>
+                <p class="event received">Device is Ready</p>
+            </div>
+        </div>-->
+    <div data-ng-include="'app/layout/shell.html'"></div>
+
+   
+
+
+
+    <script type="text/javascript" src="cordova.js"></script>
+
+
+
+    <!-- Vendor Scripts -->
+    <script src="lib/Scripts/jquery-2.0.3.js"></script>
+    <script src="lib/Scripts/angular.js"></script>
+    <script src="lib/Scripts/angular-animate.js"></script>
+    <script src="lib/Scripts/angular-route.js"></script>
+    <script src="lib/Scripts/angular-sanitize.js"></script>
+    <script src="lib/Scripts/bootstrap.js"></script>
+    <script src="lib/Scripts/toastr.js"></script>
+    <script src="lib/Scripts/moment.js"></script>
+    <script src="lib/Scripts/ui-bootstrap-tpls-0.10.0.js"></script>
+    <script src="lib/Scripts/spin.js"></script>
+	<script src="lib/Scripts/q.js"></script>
+	<script src="lib/Scripts/breeze.debug.js"></script>
+	<script src="lib/Scripts/breeze.directives.validation.js"></script>
+	<script src="lib/Scripts/breeze.to$q.js"></script>
+	<script src="lib/Scripts/breeze.saveErrorExtensions.js"></script>
+
+    <!-- Bootstrapping -->
+    <script src="app/app.js"></script>
+
+    <script src="app/config.js"></script>
+    <script src="app/config.exceptionHandler.js"></script>
+    <script src="app/config.route.js"></script>
+
+
+    <!-- common Modules -->
+    <script src="app/common/common.js"></script>
+    <script src="app/common/logger.js"></script>
+    <script src="app/common/spinner.js"></script>
+
+    <!-- common.bootstrap Modules -->
+    <script src="app/common/bootstrap/bootstrap.dialog.js"></script>
+
+    <!-- app -->
+    <script type="text/javascript" src="app/notifications/NotificationController.js"></script>
+    <script type="text/javascript" src="app/home/HomeController.js"></script>
+    <script type="text/javascript" src="app/deals/deals.js"></script>
+		<script src="app/session/sessions.js"></script>
+    
+    <!-- app layout controllers-->
+    <script src="app/layout/shell.js"></script>
+    <script src="app/layout/sidebar.js"></script>
+
+
+
+    <!--<script src="app/layout/sidebar.js"></script>-->
+    <!-- app services -->
+    <script type="text/javascript" src="app/services/NotificationService.js"></script>
+    <script type="text/javascript" src="app/services/datacontext.js"></script>
+    <script src="app/services/entityManagerFactory.js"></script>
+
+    <script src="app/services/model.js"></script>
+<!-- app directives-->
+
+    <script type="text/javascript" src="app/services/directives/InAppBrowser.js"></script>
+
+    <!-- initializer for phonegap -->
+    <script type="text/javascript" src="js/index.js"></script>
+
+</body>
+
+</html>
+
